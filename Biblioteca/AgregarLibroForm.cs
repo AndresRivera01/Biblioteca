@@ -43,7 +43,7 @@ namespace Biblioteca
 
                 agregarLibro.Agregar(agregarLibro);
 
-                MessageBox.Show("Cliente agregado correctamente");
+                MessageBox.Show("Libro agregado correctamente");
             }
             catch (Exception ex)
             {

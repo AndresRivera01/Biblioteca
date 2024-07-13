@@ -42,7 +42,7 @@ namespace Biblioteca
 
                 agregarUsuario.Agregar(agregarUsuario);
 
-                MessageBox.Show("Cliente agregado correctamente");
+                MessageBox.Show("Usuario agregado correctamente");
             }
             catch (Exception ex)
             {
