@@ -20,7 +20,7 @@ namespace Biblioteca.Entidades
         public DateTime FechaNacimiento { get; set; }
         public AgregarUsuario() 
         {
-            _connectionString = "Server=192.168.1.100;Database=AgregarLibrosDB;Persist Security Info=True;User ID=sa;Password=VeryStr0ngP@ssw0rd;TrustServerCertificate=True";
+            _connectionString = "Server=172.16.15.51;Database=AgregarLibrosDB;Persist Security Info=True;User ID=sa;Password=VeryStr0ngP@ssw0rd;TrustServerCertificate=True";
 
         }
 

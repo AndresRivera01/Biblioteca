@@ -47,5 +47,10 @@ namespace Biblioteca
             agregarUsuarioAbrir.Show();
             this.Hide();
         }
+
+        private void ExitBtn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

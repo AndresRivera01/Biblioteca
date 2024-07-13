@@ -14,7 +14,7 @@ namespace Biblioteca
 
         public void MostrarAgregarLibrosSQL()
         {
-            SqlConnection con = new SqlConnection("Server=192.168.1.100;Database=AgregarLibrosDB;Persist Security Info=True;User ID=sa;Password=VeryStr0ngP@ssw0rd;TrustServerCertificate=True");
+            SqlConnection con = new SqlConnection("Server=172.16.15.51;Database=AgregarLibrosDB;Persist Security Info=True;User ID=sa;Password=VeryStr0ngP@ssw0rd;TrustServerCertificate=True");
             con.Open();
             SqlCommand cmd = new SqlCommand("SELECT * FROM AgregarLibros", con);
             SqlDataReader dr = cmd.ExecuteReader();
@@ -28,7 +28,7 @@ namespace Biblioteca
 
         public void MostrarAgregarUsuariosSQL()
         {
-            SqlConnection con = new SqlConnection("Server=192.168.1.100;Database=AgregarLibrosDB;Persist Security Info=True;User ID=sa;Password=VeryStr0ngP@ssw0rd;TrustServerCertificate=True");
+            SqlConnection con = new SqlConnection("Server=172.16.15.51;Database=AgregarLibrosDB;Persist Security Info=True;User ID=sa;Password=VeryStr0ngP@ssw0rd;TrustServerCertificate=True");
             con.Open();
             SqlCommand cmd = new SqlCommand("select * from AgregarUsuarios", con);
             SqlDataReader dr = cmd.ExecuteReader();
@@ -66,7 +66,7 @@ namespace Biblioteca
             DateTime fechaPrestamo = DateTime.Now;
             DateTime fechaDevolucion = FechaEntregaDtp.Value;
 
-            using (SqlConnection con = new SqlConnection("Server=192.168.1.100;Database=AgregarLibrosDB;Persist Security Info=True;User ID=sa;Password=VeryStr0ngP@ssw0rd;TrustServerCertificate=True"))
+            using (SqlConnection con = new SqlConnection("Server=172.16.15.51;Database=AgregarLibrosDB;Persist Security Info=True;User ID=sa;Password=VeryStr0ngP@ssw0rd;TrustServerCertificate=True"))
             {
                 con.Open();
 
@@ -123,7 +123,7 @@ namespace Biblioteca
 
             string selectedISBN = IsbnComboBox.SelectedItem.ToString();
 
-            using (SqlConnection con = new SqlConnection("Server=192.168.1.100;Database=AgregarLibrosDB;Persist Security Info=True;User ID=sa;Password=VeryStr0ngP@ssw0rd;TrustServerCertificate=True"))
+            using (SqlConnection con = new SqlConnection("Server=172.16.15.51;Database=AgregarLibrosDB;Persist Security Info=True;User ID=sa;Password=VeryStr0ngP@ssw0rd;TrustServerCertificate=True"))
             {
                 con.Open();
 

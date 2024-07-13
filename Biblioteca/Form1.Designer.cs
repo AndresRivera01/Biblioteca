@@ -31,6 +31,7 @@
             this.AgregarLibroButton = new System.Windows.Forms.Button();
             this.EntregarLibroButton = new System.Windows.Forms.Button();
             this.AgregarUsuarioButton = new System.Windows.Forms.Button();
+            this.ExitBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // AgregarLibroButton
@@ -72,12 +73,26 @@
             this.AgregarUsuarioButton.UseVisualStyleBackColor = false;
             this.AgregarUsuarioButton.Click += new System.EventHandler(this.AgregarUsuarioButton_Click);
             // 
+            // ExitBtn
+            // 
+            this.ExitBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
+            this.ExitBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExitBtn.ForeColor = System.Drawing.Color.White;
+            this.ExitBtn.Location = new System.Drawing.Point(610, 754);
+            this.ExitBtn.Name = "ExitBtn";
+            this.ExitBtn.Size = new System.Drawing.Size(278, 107);
+            this.ExitBtn.TabIndex = 6;
+            this.ExitBtn.Text = "Salir";
+            this.ExitBtn.UseVisualStyleBackColor = false;
+            this.ExitBtn.Click += new System.EventHandler(this.ExitBtn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1591, 1057);
+            this.Controls.Add(this.ExitBtn);
             this.Controls.Add(this.AgregarUsuarioButton);
             this.Controls.Add(this.EntregarLibroButton);
             this.Controls.Add(this.AgregarLibroButton);
@@ -92,6 +107,7 @@
         private System.Windows.Forms.Button AgregarLibroButton;
         private System.Windows.Forms.Button EntregarLibroButton;
         private System.Windows.Forms.Button AgregarUsuarioButton;
+        private System.Windows.Forms.Button ExitBtn;
     }
 }
 
